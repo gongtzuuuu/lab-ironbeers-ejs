@@ -33,9 +33,8 @@ app.get('/random-beer', (req, res) => {
   .getBeers()
   .then(beersFromApi => {
     const randomBeerId = Math.floor(Math.random() * 25) + 1;
-    // console.log(beersFromApi[randomBeerId])
-    console.log(beersFromApi)})
-    //res.render('beers', { beersFromApi[randomBeerId]})})
+    const randomBeer = beersFromApi[randomBeerId];
+    res.render('random-beer', {randomBeer})})
   .catch(error => console.log(error));
 
 });
