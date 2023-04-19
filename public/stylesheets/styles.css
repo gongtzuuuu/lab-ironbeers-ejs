@@ -5,3 +5,16 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+* {
+    border: 1px grey solid;
+
+}
+
+#nav {
+    background-color: aquamarine;
+}
+
+.beerImg {
+    height: 50px;
+}

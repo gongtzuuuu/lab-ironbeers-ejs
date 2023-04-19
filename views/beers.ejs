@@ -1,0 +1,13 @@
+<%- include('partials/nav.ejs') %>
+
+<% beersFromApi.forEach(eachBeerObj => { %>
+    <div id="<% eachBeerObj.id %>">
+        <img class="beerImg" src="<%- eachBeerObj.image_url %>" alt="beer">
+        <h3><%= eachBeerObj.name %></h3>
+        <p><%= eachBeerObj.description %></p>
+        <p><%= eachBeerObj.tagline %></p>
+    </div>
+<% }) %>
+
+
+<%- include('partials/footer.ejs') %>
